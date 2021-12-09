@@ -3,10 +3,10 @@ module Exercise
     class << self
       def replace(array)
         new_array = []
-        array.any?
+        max_el = max(array)
         array.each do |el|
           new_array << if el.positive?
-                         max(array)
+                         max_el
                        else
                          el
                        end
